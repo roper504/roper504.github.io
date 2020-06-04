@@ -1,0 +1,40 @@
+<div class="loading"></div>
+
+<style>
+
+	.loading{
+		width:100px;
+		height:100px;
+		border-radius :300px;
+		border:10px solid;
+		border-color: #ace #ace rgba(0,0,0,0) rgba(0,0,0,0) ;
+		animation : colort 1s linear infinite,rotate 2s infinite linear;
+	}
+	@keyframes colort{
+		0% { 
+			border-color:#ffd539 #ffd539 rgba(0,0,0,0) rgba(0,0,0,0);
+		 }
+		25% {
+			border-color:#ace #ace rgba(0,0,0,0) rgba(0,0,0,0);
+		 }
+		50% {
+			border-color:rgba(200,150,150,1) rgba(200,150,150,1) rgba(0,0,0,0) rgba(0,0,0,0); 
+		 }
+		75% {
+			border-color:#987654 #987654 rgba(0,0,0,0) rgba(0,0,0,0);  
+		 }
+		100% {
+			border-color:#ffd539 #ffd539 rgba(0,0,0,0) rgba(0,0,0,0);  
+		 }
+	}
+	@keyframes rotate{
+		from{
+			transform:rotate(0deg);
+		}
+		to{
+			transform:rotate(360deg);
+		}
+	}
+
+
+</style>
